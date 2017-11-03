@@ -1,0 +1,17 @@
+/*
+* @Author: ThinkPad
+* @Date:   2017-10-25 14:34:47
+* @Last Modified by:   ThinkPad
+* @Last Modified time: 2017-10-31 14:47:42
+*/
+
+a{
+    color: #666
+}
+
+a:hover{
+    color: #999
+}
+.ant-card-body{
+    padding: 24px 24px 0 24px;
+}

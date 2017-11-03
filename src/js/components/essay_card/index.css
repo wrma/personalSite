@@ -1,0 +1,21 @@
+/*
+* @Author: ThinkPad
+* @Date:   2017-10-25 14:12:01
+* @Last Modified by:   ThinkPad
+* @Last Modified time: 2017-10-31 14:57:27
+*/
+.card{
+    margin-bottom: 48px;
+    width: 100%;
+}
+.content{
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+
+.info{
+    font-size: 12px;
+}
+.info span{
+    margin-right: 12px;
+}
