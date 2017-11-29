@@ -1,0 +1,66 @@
+/*
+* @Author: ThinkPad
+* @Date:   2017-11-06 22:07:06
+* @Last Modified by:   ThinkPad
+* @Last Modified time: 2017-11-07 19:59:02
+*/
+.wrap{
+    margin-top: 60px;
+    width: 100%;
+}
+.wrap .title{
+    font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.wrap .more{
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
+.wrap .item{
+    font-size: 14px;
+    overflow: hidden;
+}
+.wrap .item .comment{
+    border: 1px solid  #ccc;
+    padding: 12px;
+    overflow: hidden;
+}
+.wrap .item .comment .content{
+    margin: 12px;
+}
+.wrap .item .comment .vote{
+    font-size: 12px;
+    float: right;
+}
+.wrap .item .info span{
+    margin-right: 10px;
+}
+.wrap .item .response_list{
+    width: 85%;
+    float: right;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.wrap .item .response_list .response{
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.wrap .item .response_list .content{
+    margin: 12px;
+}
+.wrap .item .response_list .info{
+    margin-bottom: 6px;
+    font-size: 12px;
+    float: right;
+}
+.wrap .item .response_list .more{
+    width: 100%;
+    text-align: right;
+    padding: 8px 8px 0 0;
+    font-size: 14px;
+}

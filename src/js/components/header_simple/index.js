@@ -1,12 +1,12 @@
 /*
 * @Author: ThinkPad
-* @Date:   2017-10-22 10:52:30
+* @Date:   2017-11-03 19:05:44
 * @Last Modified by:   ThinkPad
-* @Last Modified time: 2017-11-03 22:01:55
+* @Last Modified time: 2017-11-03 22:28:22
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
-import headerCss from './index.css';
+import headerSimpleCss from './index.css';
 import {Col,Row} from 'antd';
 import { Menu, Icon } from 'antd';
 import { Link} from 'react-router-dom'
@@ -14,7 +14,7 @@ const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 
-export default class Header extends React.Component{
+export default class HeaderSimple extends React.Component{
     constructor(){
         super();
         this.state = {
@@ -30,23 +30,17 @@ export default class Header extends React.Component{
     render(){
 
         return(
-            <div className={headerCss.head}>
+            <div className={headerSimpleCss.head}>
                 <Row>
                     <Col span={3}></Col>
-                    <Col span={18} className={headerCss.title}>
-                        <div className={headerCss.logo}>WRMA</div>
-                    </Col>
-                    <Col span={3}></Col>
-                </Row>
-                <Row>
-                    <Col span={16}></Col>
-                    <Col span={6}>
+                    <Col span={18} className={headerSimpleCss.title}>
+                        <div className={headerSimpleCss.logo}>WRMA</div>
                         <div>
                             <Menu
                             // onClick={this.handleClick}
                             selectedKeys={[this.state.current]}
                             mode="horizontal"
-                            className={headerCss.nav}
+                            className={headerSimpleCss.nav}
                             >
                             <Menu.Item key="index">
                               <Link to="/">首页</Link>
@@ -69,7 +63,7 @@ export default class Header extends React.Component{
                           </Menu>
                         </div>
                     </Col>
-                    <Col span={2}></Col>
+                    <Col span={3}></Col>
                 </Row>
             </div>
         );

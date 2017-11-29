@@ -2,7 +2,7 @@
 * @Author: ThinkPad
 * @Date:   2017-10-09 23:14:13
 * @Last Modified by:   ThinkPad
-* @Last Modified time: 2017-10-31 16:03:46
+* @Last Modified time: 2017-11-03 21:41:22
 */
 var path = require('path');
 var webpack=require('webpack');
@@ -56,10 +56,7 @@ const config = {
             },
             {
                  test: /\.css$/,
-                 loader: [
-                   'style-loader',
-                   'css-loader'
-                 ]
+                 loader: "style-loader!css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]"
             }
         ]
     },

@@ -1,0 +1,26 @@
+/*
+* @Author: ThinkPad
+* @Date:   2017-11-03 19:05:53
+* @Last Modified by:   ThinkPad
+* @Last Modified time: 2017-11-03 22:25:48
+*/
+.head{
+    width: 100%;
+    height: 50px;
+    background: #eee;
+}
+.head .title{
+
+}
+.head .title .logo{
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+}
+.head .nav{
+    background: #eee;
+    color: #666;
+    float: right;
+}

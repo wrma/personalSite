@@ -2,11 +2,11 @@
 * @Author: ThinkPad
 * @Date:   2017-10-22 15:06:13
 * @Last Modified by:   ThinkPad
-* @Last Modified time: 2017-10-31 23:04:07
+* @Last Modified time: 2017-11-03 21:07:46
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
-import './index.css';
+import containerCss from './index.css';
 import {Col,Row} from 'antd';
 import {Card} from 'antd';
 import EssayCard from '../essay_card/index.js'
@@ -16,7 +16,7 @@ import ImageCard from '../image_card/index.js'
 export default class Container extends React.Component{
     render(){
         return(
-            <div className='wrap'>
+            <div className={containerCss.wrap}>
                 <Row>
                     <Col span={4}></Col>
                     <Col span={16}>
