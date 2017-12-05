@@ -2,7 +2,7 @@
 * @Author: ThinkPad
 * @Date:   2017-10-30 14:53:09
 * @Last Modified by:   wrma
-* @Last Modified time: 2017-12-05 17:40:16
+* @Last Modified time: 2017-12-05 17:48:17
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -21,7 +21,14 @@ export default class ImageCard extends React.Component{
                        <div className={ImageCardCss.desc}>
                             <div className={ImageCardCss.desc_title}>
                                 <span>{this.props.title}</span>
-                                <span className={ImageCardCss.tag}><Tag>css</Tag><Tag>java</Tag></span>
+                                <span className={ImageCardCss.tag}>
+                                    {
+                                        // 使数据嵌套可以渲染出来
+                                        this.props.tags.map(function(item,index){
+                                            return <Tag key={index}>{item.tagName}</Tag>
+                                        })
+                                    }
+                                </span>
                             </div>
                             <div className={ImageCardCss.desc_content}>
                                 {this.props.summary}

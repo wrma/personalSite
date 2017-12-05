@@ -2,7 +2,7 @@
 * @Author: ThinkPad
 * @Date:   2017-10-22 15:06:13
 * @Last Modified by:   wrma
-* @Last Modified time: 2017-12-05 17:39:11
+* @Last Modified time: 2017-12-05 18:04:36
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -61,7 +61,8 @@ export default class Container extends React.Component{
                                     author={item.author}
                                     date={item.date}
                                     readNum={item.readNum}
-                                    likeNum={item.likeNum}>
+                                    likeNum={item.likeNum}
+                                    tags={item.tags}>
                                 </EssayCard>
                             }else{
                                 return <ImageCard 
@@ -73,7 +74,7 @@ export default class Container extends React.Component{
                                     readNum={item.readNum}
                                     likeNum={item.likeNum}
                                     image={item.image}
-                                    tag={item.tags}>
+                                    tags={item.tags}>
                                 </ImageCard>
                             }
                             
