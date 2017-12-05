@@ -1,8 +1,8 @@
 /*
 * @Author: ThinkPad
 * @Date:   2017-10-22 15:06:13
-* @Last Modified by:   ThinkPad
-* @Last Modified time: 2017-11-03 21:07:46
+* @Last Modified by:   wrma
+* @Last Modified time: 2017-12-05 16:02:56
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -14,6 +14,12 @@ import TagCard from '../tag_card/index.js'
 import ImageCard from '../image_card/index.js'
 
 export default class Container extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            list : ''
+        }
+    };
     render(){
         return(
             <div className={containerCss.wrap}>
