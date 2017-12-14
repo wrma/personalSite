@@ -2,7 +2,7 @@
 * @Author: ThinkPad
 * @Date:   2017-10-22 15:06:13
 * @Last Modified by:   wrma
-* @Last Modified time: 2017-12-05 18:04:36
+* @Last Modified time: 2017-12-14 14:41:18
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -56,6 +56,7 @@ export default class Container extends React.Component{
                             if (!item.image) {
                                 return <EssayCard 
                                     key={index} 
+                                    id={item.id}
                                     title={item.title}
                                     summary={item.summary}
                                     author={item.author}
@@ -67,6 +68,7 @@ export default class Container extends React.Component{
                             }else{
                                 return <ImageCard 
                                     key={index} 
+                                    id={item.id}
                                     title={item.title}
                                     summary={item.summary}
                                     author={item.author}
