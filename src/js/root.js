@@ -2,17 +2,12 @@
 * @Author: ThinkPad
 * @Date:   2017-10-31 15:12:45
 * @Last Modified by:   wrma
-* @Last Modified time: 2017-12-14 15:44:38
+* @Last Modified time: 2017-12-14 16:55:43
 */
 import React from 'react';
 import 'antd/dist/antd.css';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch
-} from 'react-router-dom'
+import {Router,Route,hashHistory} from 'react-router';
 import Index from 'page/index/index.js'
 import Share from 'page/share/index.js'
 import About from 'page/about/index.js'
@@ -22,13 +17,11 @@ import Photo from 'page/photo/index.js'
 export default class Root extends React.Component{
     render(){
         return(
-            <Router>
-                <div>
-                    <Route exact path='/' component={Share} />
-                    <Route path='/share' component={Share} />
-                    <Route path='/about' component={About} />
-                    <Route path='/detail/:id' component={Detail} />
-                </div>
+            <Router history={hashHistory}>
+                <Route path='/' component={Index} />
+                <Route path='/share' component={Share} />
+                <Route path='/about' component={About} />
+                <Route path='/detail/:id' component={Detail} />
             </Router>
         );
     };

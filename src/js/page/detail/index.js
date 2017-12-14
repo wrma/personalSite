@@ -2,7 +2,7 @@
 * @Author: ThinkPad
 * @Date:   2017-11-04 10:58:03
 * @Last Modified by:   wrma
-* @Last Modified time: 2017-12-14 15:33:49
+* @Last Modified time: 2017-12-14 16:07:47
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -26,7 +26,7 @@ export default class About extends React.Component{
         var myFetchOptions = {
             method : 'GET',
         };
-        fetch("https://www.easy-mock.com/mock/59c76db1e0dc663341b7173c/index/eaasyDetail.do?id="+this.props.match.params.id, myFetchOptions)
+        fetch("https://www.easy-mock.com/mock/59c76db1e0dc663341b7173c/index/eaasyDetail.do?id="+this.props.params.id, myFetchOptions)
             .then(response => response.json())
             .then(json => {
                 if (this._isMounted) {

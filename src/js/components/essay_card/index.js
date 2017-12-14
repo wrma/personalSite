@@ -2,15 +2,13 @@
 * @Author: ThinkPad
 * @Date:   2017-10-25 14:11:55
 * @Last Modified by:   wrma
-* @Last Modified time: 2017-12-14 15:12:23
+* @Last Modified time: 2017-12-14 16:07:39
 */
 var React = require('react');
 var ReactDOM = require('react-dom');
 import essayCardCss from './index.css';
 import {Card,Icon,Tag} from 'antd';
-import {
-  Link
-} from 'react-router-dom'
+import {Router, Route, Link, browserHistory} from 'react-router'
 
 export default class EssayCard extends React.Component{
     constructor(){
